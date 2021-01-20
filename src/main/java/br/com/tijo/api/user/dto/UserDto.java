@@ -1,5 +1,7 @@
 package br.com.tijo.api.user.dto;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
@@ -26,6 +28,9 @@ public class UserDto  {
 	@SerializedName("icon")
 	@JsonProperty("icon")	
 	private String icon;
+	@SerializedName("roles")
+	@JsonProperty("roles")	
+	private List<String> roles;
 
 	
 	
@@ -66,6 +71,12 @@ public class UserDto  {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	public List<String> getRoles() {
+		return roles;
+	}
+	public void setRoles(List<String> roles) {
+		this.roles = roles;
 	}
 	
 
