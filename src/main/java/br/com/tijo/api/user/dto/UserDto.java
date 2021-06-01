@@ -31,6 +31,9 @@ public class UserDto  {
 	@SerializedName("roles")
 	@JsonProperty("roles")	
 	private List<String> roles;
+	@SerializedName("companies")
+	@JsonProperty("companies")	
+	private List<String> companies;
 
 	
 	
@@ -77,6 +80,12 @@ public class UserDto  {
 	}
 	public void setRoles(List<String> roles) {
 		this.roles = roles;
+	}
+	public List<String> getCompanies() {
+		return companies;
+	}
+	public void setCompanies(List<String> companies) {
+		this.companies = companies;
 	}
 	
 
