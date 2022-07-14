@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.tijo</groupId>
-	<artifactId>usuarios-dto</artifactId>
+	<artifactId>api-usuarios-dto</artifactId>
 	<version>1.0.2</version>
 	<packaging>jar</packaging>
-	<name>usuarios-dto</name>
+	<name>api-usuarios-dto</name>
 	<description></description>
 
 	<properties>
@@ -45,7 +45,7 @@
 	</dependencies>
 
     <build>
-        <finalName>usuarios-dto</finalName>
+        <finalName>api-usuarios-dto</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
