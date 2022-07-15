@@ -1,10 +1,14 @@
-package br.com.tijo.api.user.dto;
+package br.com.engmanager.api.user.dto;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
-public class ShortInfoUserDo {
-
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class UserDto  {
+	
 	@SerializedName("id")
 	@JsonProperty("id")	
 	private String id;
@@ -24,6 +28,12 @@ public class ShortInfoUserDo {
 	@SerializedName("icon")
 	@JsonProperty("icon")	
 	private String icon;
+	@SerializedName("roles")
+	@JsonProperty("roles")	
+	private List<String> roles;
+	@SerializedName("companies")
+	@JsonProperty("companies")	
+	private List<String> companies;
 
 	
 	
@@ -40,6 +50,7 @@ public class ShortInfoUserDo {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	public String getStatus() {
 		return status;
 	}
@@ -64,8 +75,20 @@ public class ShortInfoUserDo {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	public List<String> getRoles() {
+		return roles;
+	}
+	public void setRoles(List<String> roles) {
+		this.roles = roles;
+	}
+	public List<String> getCompanies() {
+		return companies;
+	}
+	public void setCompanies(List<String> companies) {
+		this.companies = companies;
+	}
 	
-	
-	
-	
+
+
+
 }
